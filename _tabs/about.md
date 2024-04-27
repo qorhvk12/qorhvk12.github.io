@@ -4,5 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+개발자도 아니고 일반인이 운영하는 블로그입니다.
+할 줄 아는거라고는 VB.net, 엑셀 VBA 뿐.....
+잊어버리기 전에 기록을 해두자 하고 만든 블로그 입니다.
+
+사실, 옵시디언을 사용하다 마크다운을 맛들여 버린게 화근입니다.
+마크다운을 몰랐으면 여기까지 오지도 않았을 겁니다. 아마....?
+지금은 회사 서버에 docker로 조플린 서버를 올려서 조플린을 사용 하고 있습니다.
+
+잡소리가 길어졌내요.
+이유야 어쨌든 무엇 때문인지는 모르겠으나, ==배고픈 블로그==까지 오신 것을 환영합니다.
