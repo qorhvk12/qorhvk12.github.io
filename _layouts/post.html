@@ -53,11 +53,7 @@ tail_includes:
         <!-- author(s) -->
         <span>
           {% if page.author %}
-            <!--
-              후... 또 주석 작성자가 안나와... 그냥 문자 대입
-              {% assign authors = page.author %}
-            -->
-            {% assign authors = '배고픈 사람' %}
+            {% assign authors = page.author %}
           {% elsif page.authors %}
             {% assign authors = page.authors %}
           {% endif %}
