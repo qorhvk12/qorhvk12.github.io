@@ -52,7 +52,7 @@ notification:
 # ----- Posts related labels -----
 
 post:
-  written_by: By 배고픈 사람
+  written_by: By
   posted: 작성일
   updated: 업데이트
   words: 단어
