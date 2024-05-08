@@ -59,7 +59,7 @@ post:
   pageview_measure: 조회
   read_time:
     unit: 분
-    prompt: "읽는데 필요한 시간 약  "
+    prompt: 읽는데 필요한 시간 약
   relate_posts: 관련된 글
   share: 공유하기
   button:
