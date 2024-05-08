@@ -27,7 +27,7 @@
   {%- if include.prompt -%}
     {%- assign _prompt_words = read_prompt | number_of_words: 'auto' -%}
     {%- unless _prompt_words > 1 -%}{{ ' ' }}{%- endunless -%}
-    {{ read_prompt }} &nbsp;&nbsp;&nbsp;
+    {{ read_prompt }} &nbsp;&nbsp;
   {%- endif -%}
   <em>
     {{- read_time -}}
