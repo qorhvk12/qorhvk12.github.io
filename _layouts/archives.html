@@ -20,9 +20,24 @@ layout: page
       {% assign last_year = cur_year %}
     {% endif %}
 
+    <!--
+      날짜 표기 형식 변경을 위한 백업
+      <li>
+        {% assign ts = post.date | date: '%s' %}
+        <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+          {{ post.date | date: df_strftime_m }}
+        </span>
+        <span class="date day" data-ts="{{ ts }}" data-df="/ DD">
+          {{ post.date | date: '%d' }}
+        </span>
+
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    -->
+
     <li>
       {% assign ts = post.date | date: '%s' %}
-      <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+      <span class="date month" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
         {{ post.date | date: df_strftime_m }}
       </span>
       <span class="date day" data-ts="{{ ts }}" data-df="/ DD">
@@ -31,7 +46,6 @@ layout: page
 
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
-
     {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
 </div>
