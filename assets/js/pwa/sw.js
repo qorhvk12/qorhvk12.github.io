@@ -1,9 +1,9 @@
+/**
 ---
 layout: compress
 permalink: /:basename.min.js
 # PWA service worker
 ---
-
 
 const swconfUrl = '{{ '/assets/js/data/swconf.js' | relative_url }}';
 
@@ -99,4 +99,20 @@ self.addEventListener('fetch', (event) => {
       });
     })
   );
+});
+*/
+
+self.addEventListener('install', function (e) {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', function (e) {
+  self.registration
+    .unregister()
+    .then(function () {
+      return self.clients.matchAll();
+    })
+    .then(function (clients) {
+      clients.forEach((client) => client.navigate(client.url));
+    });
 });
